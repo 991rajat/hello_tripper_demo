@@ -1,0 +1,95 @@
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="25dp"
+    app:cardUseCompatPadding="false"
+    app:cardPreventCornerOverlap="false"
+    android:layout_marginEnd="20dp"
+    android:elevation="2dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/blue_wooden_door"
+            android:id="@+id/card_image"
+        app:riv_corner_radius="25dp"
+        android:scaleType="fitXY"
+        />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="4dp">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_heart"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text=" 4545"
+                    android:id="@+id/card_number"
+                    android:textColor="#fff"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rio De Janerio"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_above="@+id/card_description_layout"
+                android:id="@+id/card_place_text"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="20dp"
+                android:id="@+id/card_description_layout"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_trending_up_black_24dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="5dp"
+                    android:text="302 People Watching"
+                    android:textSize="17sp"
+                    android:id="@+id/card_description"
+
+                    android:textColor="#fff"/>
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

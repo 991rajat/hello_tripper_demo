@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/page_1"
+        android:enabled="true"
+        android:icon="@drawable/ic_factory"
+        android:title="Explore"/>
+    <item
+        android:id="@+id/page_2"
+        android:icon="@drawable/ic_factory"
+        android:title="Trending"/>
+    <item
+        android:id="@+id/page_3"
+        android:icon="@drawable/ic_factory"
+        android:title="Places"/>
+    <item
+        android:id="@+id/page_4"
+        android:icon="@drawable/ic_factory"
+        android:title="Favourite"/>
+    <item
+        android:id="@+id/page_5"
+        android:icon="@drawable/ic_factory"
+        android:title="Settings"/>
+</menu>
